@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import usermanager from './usermanager';
 
 @Component({
   selector: 'user-controller',
@@ -15,9 +16,17 @@ export class UserControllerComponent {
     }
 
     createUser() {
-        alert('number of Users ' + this.numberOfUsers);
+        usermanager.createUsers(this.numberOfUsers);
     }
 
+    updateUsers() {
+        usermanager.updateUsers(this.numberOfUsers);
+    }
+
+    clearUsers() {
+        usermanager.clearUsers();
+    }
+    
     updateNumberOfUsers($event) {
         var newValue = Number.parseInt($event.target.value)
         this.valid = !Number.isNaN(newValue);
