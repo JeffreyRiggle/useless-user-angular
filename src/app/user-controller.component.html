@@ -1,7 +1,7 @@
-<div>
-    <span>Number of users to create or update</span>
-    <input type="text">
-    <button>Create</button>
-    <button>Update</button>
-    <button>Clear</button>
+<div class="controller">
+    <span class="desc-text">Number of users to create or update</span>
+    <input type="text" (input)="updateNumberOfUsers($event)" [ngClass]="{'valid': valid, 'invalid': !valid}">
+    <button (click)="createUser()" [disabled]="!valid">Create</button>
+    <button (click)="updateUser()" [disabled]="!valid">Update</button>
+    <button (click)="clearUser()">Clear</button>
 </div>
