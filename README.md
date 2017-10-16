@@ -1,6 +1,8 @@
 # UselessUserAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7. 
+
+This is a simple application created with the intention of comparing Angular's performance against some other popular front-end frameworks. [For more information](https://github.com/JeffreyRiggle/useless-user-results)
 
 ## Development server
 
