@@ -1,0 +1,15 @@
+<div>
+    <ul class="user-list">
+        <li class="user-list-item-header">
+            <span class="user-list-column-header">First Name</span>
+            <span class="user-list-column-header">Last Name</span>
+            <span class="user-list-column-header">Occupation</span>
+            <span class="user-list-column-header">Gender</span>
+        </li>
+        <user-list-item
+                *ngFor="let user of usermanager.users"
+                [user]="user"
+                class="user-list-item">
+        </user-list-item>
+    </ul>
+</div>

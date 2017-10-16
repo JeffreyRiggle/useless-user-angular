@@ -1,0 +1,8 @@
+<div>
+    <li>
+        <span class="user-list-column">{{user.firstName}}</span>
+        <span class="user-list-column">{{user.lastName}}</span>
+        <span class="user-list-column">{{user.occupation}}</span>
+        <span [ngClass]="{'user-list-column': true, 'user-female': isFemale, 'user-male': !isFemale}">{{user.gender}}</span>
+    </li>
+</div>

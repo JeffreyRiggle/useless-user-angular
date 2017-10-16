@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import usermanager from './usermanager';
+import usermanager from './sharedusermanager';
 
 @Component({
   selector: 'user-controller',
@@ -15,7 +15,7 @@ export class UserControllerComponent {
         this.numberOfUsers = 0;
     }
 
-    createUser() {
+    createUsers() {
         usermanager.createUsers(this.numberOfUsers);
     }
 
