@@ -8,7 +8,7 @@ import { User } from './user';
   styleUrls: ['./user-list-item.component.css']
 })
 export class UserListItemComponent {
-    _user: User;
+    private _user: User;
     isFemale: boolean;
 
     constructor() {
